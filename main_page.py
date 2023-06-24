@@ -24,8 +24,7 @@ def main():
             passengers_df = df[(df['is_driver'] == False)]	
             passengers = passengers_df['name'].tolist() # list of passengers
             
-            column_menu = ["Name", "Email", "Is a driver (boolean column)?", "Capacity of car", 
-                            "Starting point address", "Destination", "Others"]
+            column_menu = df.columns
                             # phone number? Juge?
             
             st.header("Assign Columns")
