@@ -2,3 +2,4 @@ numpy
 networkx
 pandas
 streamlit
+stqdm
