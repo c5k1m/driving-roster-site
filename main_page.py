@@ -39,7 +39,7 @@ def main():
             df = pd.read_csv(input_file)
             
             description_list = {
-                "name": "Please choose the name column",
+                "name": "Which column indicates the driver/rider?",
                 "phone_num": "Please choose the phone number column",
                 "email": "Please choose the email column",
                 "live_on_campus": "Please choose the lives on campus column",
