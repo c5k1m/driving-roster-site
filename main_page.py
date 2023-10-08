@@ -42,11 +42,11 @@ def main():
                 "name": "Which column indicates the person's name?",
                 "phone_num": "Which column indicates the person's phone number?",
                 "email": "Which column indicates the person's email address?",
-                "live_on_campus": "Which column indicates whether driver/rider lives on campus?",
+                "live_on_campus": "Which column indicates whether the person lives on campus?",
                 "judge" : "Which column indicates whether the person is a judge?",
                 "res_address": "Which column indicates the person's residential address?",
                 "is_driver":"Which column indicates whether person is a rider or driver?",
-                "num_seats": "Which column indicates how many seats the person has in their car, if the person is a driver?",
+                "num_seats": "Which column indicates how many seats the person has in their car? (0 if rider)",
                 "destination": "Which column indicates the group assignment for the person?"
             }
             
