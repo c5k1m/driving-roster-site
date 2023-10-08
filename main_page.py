@@ -34,7 +34,7 @@ def main():
         # mini biographies here
     
     if choice == "Home":
-        input_file = st.file_uploader("Upload your CSV file here", type=["csv"])
+        input_file = st.file_uploader("Please upload your CSV file here.", type=["csv"])
         if input_file is not None:
             df = pd.read_csv(input_file)
             
