@@ -39,15 +39,15 @@ def main():
             df = pd.read_csv(input_file)
             
             description_list = {
-                "name": "Which column indicates the driver/rider?",
-                "phone_num": "Please choose the phone number column",
-                "email": "Please choose the email column",
-                "live_on_campus": "Please choose the lives on campus column",
-                "judge" : "Please choose the judge column",
-                "res_address": "Please choose the residential address column",
-                "is_driver":"Please choose the driver column",
-                "num_seats": "Please choose the capacity/number of seats column",
-                "destination": "Please choose the group/destination column"
+                "name": "Which column indicates the person's name?",
+                "phone_num": "Which column indicates the person's phone number?",
+                "email": "Which column indicates the person's email address?",
+                "live_on_campus": "Which column indicates whether driver/rider lives on campus?",
+                "judge" : "Which column indicates whether the person is a judge?",
+                "res_address": "Which column indicates the person's residential address?",
+                "is_driver":"Which column indicates whether person is a rider or driver?",
+                "num_seats": "Which column indicates how many seats the person has in their car, if the person is a driver?",
+                "destination": "Which column indicates the group assignment for the person?"
             }
             
             # Choose which columns contain information about person's name,
