@@ -1,4 +1,5 @@
 import streamlit as st
+from geopy.geocoders import Nominatim
 import pandas as pd
 import numpy as np
 from state import State
@@ -267,14 +268,22 @@ def allocation_2_csv(allocation_list):
     pass
 
 def get_coord(address):
+    geolocator = Nominatim()
+    location = geolocator.geocode(address)
+    if location is not None:
+        return (location.longitude, location.latitude)
+    else:
+        return None
+
+    """
     base_url = f"https://nominatim.openstreetmap.org/search/{address}?format=json&addressdetails=1&limit=1&polygon_svg=1"
-    print(base_url)
     r = requests.get(base_url).json()
     if len(r) == 0:
         return (None, None)
     lat = float(r[0]["lat"])
     long = float(r[0]["lon"])
     return (lat,long)
+    """
 
 def add_groups(group_name, driver_list, passenger_list):
     st.subheader(group_name)
