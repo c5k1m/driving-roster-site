@@ -1,5 +1,5 @@
 import streamlit as st
-from geopy.geocoders
+import geopy.geocoders
 import pandas as pd
 import numpy as np
 from state import State
