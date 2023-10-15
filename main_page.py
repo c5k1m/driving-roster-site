@@ -1,5 +1,5 @@
 import streamlit as st
-from geopy.geocoders import Nominatim
+from geopy.geocoders
 import pandas as pd
 import numpy as np
 from state import State
@@ -268,7 +268,7 @@ def allocation_2_csv(allocation_list):
     pass
 
 def get_coord(address):
-    geolocator = Nominatim()
+    geolocator = geopy.geocoders.Nominatim()
     location = geolocator.geocode(address)
     if location is not None:
         return (location.longitude, location.latitude)
