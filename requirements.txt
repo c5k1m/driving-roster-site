@@ -3,4 +3,4 @@ networkx
 pandas
 streamlit
 stqdm
-geopy
+Nominatim
