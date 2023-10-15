@@ -268,6 +268,7 @@ def allocation_2_csv(allocation_list):
 
 def get_coord(address):
     base_url = f"https://nominatim.openstreetmap.org/search/{address}?format=json&addressdetails=1&limit=1&polygon_svg=1"
+    print(base_url)
     r = requests.get(base_url).json()
     if len(r) == 0:
         return (None, None)
