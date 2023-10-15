@@ -1,5 +1,4 @@
 import streamlit as st
-import geopy
 from geopy.geocoders import Nominatim
 import pandas as pd
 import numpy as np
