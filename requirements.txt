@@ -3,4 +3,4 @@ networkx
 pandas
 streamlit
 stqdm
-geopy
+geopy==2.3.0
