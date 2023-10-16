@@ -273,7 +273,7 @@ def get_coord(address):
     if location is not None:
         return (location.longitude, location.latitude)
     else:
-        return None
+        return (None, None)
 
     """
     base_url = f"https://nominatim.openstreetmap.org/search/{address}?format=json&addressdetails=1&limit=1&polygon_svg=1"
