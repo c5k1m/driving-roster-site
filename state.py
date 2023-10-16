@@ -118,6 +118,10 @@ class State:
             self.penalty_scaler = self.network[self.network != np.inf].max()
         else:
             self.penalty_scaler = 0
+        """
+        self.penalty_scaler = self.network[self.network != np.inf].max()
+        """
+        
 
         # Remove connections for strict groupings
         for driver, passengers in self.strict_dict.items():
