@@ -1,5 +1,6 @@
 import streamlit as st
-import geopy.geocoders
+import geopy
+from geopy.geocoders import Nominatim
 import pandas as pd
 import numpy as np
 from state import State
