@@ -268,7 +268,7 @@ def allocation_2_csv(allocation_list):
     pass
 
 def get_coord(address):
-    geolocator = Nominatim()
+    geolocator = Nominatim(user_agent = "abcd")
     location = geolocator.geocode(address)
     if location is not None:
         return (location.longitude, location.latitude)
