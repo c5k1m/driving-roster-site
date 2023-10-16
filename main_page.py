@@ -1,6 +1,4 @@
 import streamlit as st
-import geopy
-from geopy.geocoders import Nominatim
 import pandas as pd
 import numpy as np
 from state import State
@@ -9,6 +7,8 @@ import warnings
 import requests
 from stqdm import stqdm
 import os
+import geopy
+from geopy.geocoders import Nominatim
 warnings.filterwarnings("ignore")
 
 COLLEGE_2_COORD_DICT = { # Convert College or Apartments to Lat, Long
