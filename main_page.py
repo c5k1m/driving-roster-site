@@ -271,7 +271,7 @@ def get_coord(address):
     geolocator = Nominatim(user_agent = "abcd")
     location = geolocator.geocode(address)
     if location is not None:
-        return (location.longitude, location.latitude)
+        return (location.latitude, location.longitude)
     else:
         return (None, None)
 
