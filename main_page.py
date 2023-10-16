@@ -7,7 +7,6 @@ import warnings
 import requests
 from stqdm import stqdm
 import os
-import geopy
 from geopy.geocoders import Nominatim
 warnings.filterwarnings("ignore")
 
