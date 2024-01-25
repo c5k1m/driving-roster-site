@@ -26,7 +26,7 @@ COLLEGE_2_COORD_DICT = { # Convert College or Apartments to Lat, Long
 unassigned_list = []
 
 def main():
-    st.title('Driving Roster Automation')
+    st.title('Driving Roster Automation (Current Version)')
     menu = ["Home", "About Us"]
     choice = st.sidebar.selectbox("Menu", menu)
 
